@@ -1,0 +1,58 @@
+{% load i18n %}
+{% load addclass %}
+
+{% load crispy_forms_tags %}
+{% load crispy_forms_utils %}
+{% load crispy_forms_field %}
+
+
+{{ InvoiceDetailFormSet.management_form|crispy }}
+
+<div class="row">
+    <div class="input-field col s6">
+        {{ form.customer }}
+        {{ form.customer.label_tag }}
+    </div>
+    <div class="input-field col s6">
+        {{ form.description|addclass:'materialize-textarea' }}
+        {{ form.description.label_tag }}
+    </div>
+</div>
+
+<div class="invoice-table">
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <table class="striped">
+                <thead>
+                    <tr>
+                        <th data-field="no">No</th>
+                        <th data-field="item">{% trans 'Products' %}</th>
+                        <th data-field="item">{% trans 'Quantity' %}</th>
+                        <th data-field="item">{% trans 'Price' %}</th>
+                        <th data-field="item">{% trans 'Discount' %}</th>
+                        <th data-field="item">{% trans 'Shipping' %}</th>
+                        <th data-field="item">{% trans 'Subtotal' %}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for form in InvoiceDetailFormSet %}          
+                        <tr  data-formset-form class=" row1 formset_row">
+                            <td>1</td>
+                            <td>{{  form.product }}</td>
+                            <td>{{  form.quantity }}</td>
+                            <td>{{  form.price_sell }}</td>
+                            <td>{{  form.discount }}</td>
+                            <td>{{  form.shipping }}</td>
+                            <td>{{  form.subtotal }}</td>
+                            <td>
+                                {{ form.DELETE }}
+                                {{ form.ORDER }}
+                                <a href="#" data-formset-delete-button class="btn-floating  waves-effect waves-light red  left"><i class="mdi-action-delete activator"></i></a>
+                            </td>                   
+                        </tr>
+                    {% endfor %} 
+                </tbody>
+            </table>
+        </div>    
+    </div>
+</div>

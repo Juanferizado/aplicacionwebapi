@@ -1,0 +1,69 @@
+{% load static %}
+{% load i18n %}
+{% get_available_languages as languages %}
+{% get_current_language as LANGUAGE_CODE %}
+{% get_language_info for LANGUAGE_CODE as lang %}
+   
+
+    
+    {% block extra_style%}
+        <style type="text/css">
+            nav .brand-logo {
+                font-size: 0.8em;
+            }
+        </style>
+    {% endblock %}
+    <!-- START HEADER -->
+    <header id="header" class="page-topbar">
+        <!-- start header nav-->
+        <div class="navbar-fixed">
+            <nav class="navbar-color">
+                <div class="nav-wrapper">
+                    <ul class="left">                      
+                        <li><h1 class="logo-wrapper"><a href="{% url 'home_super' %}" class="brand-logo darken-1">{% trans 'Gestion servicios' %}</a> <span class="logo-text">Gestion servicios</span></h1></li>
+                    </ul>
+                    <div class="header-search-wrapper hide-on-med-and-down">
+                        <i class="mdi-action-search"></i>
+                         <form class="col s12 right-alert" method="post" action="{% url 'customer-search' %}" multi-form >
+                            {% csrf_token %}
+                            <input type="text" value="{{toke_search}}" name="search" class="header-search-input z-depth-2" placeholder="{% trans 'Search' %}"/>
+                        </form>
+                    </div>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            {% if LANGUAGE_CODE == 'en'%}
+                                <a href="javascript:void(0);" class="waves-effect waves-block waves-light translation-button"  data-activates="translation-dropdown"><img src="{% static 'img/super/images/flag-icons/en.png' %}" alt="{{lang.name}}" /></a>
+                            {% endif %}
+                            {% if LANGUAGE_CODE == 'es'%}
+                                <a href="javascript:void(0);" class="waves-effect waves-block waves-light translation-button"  data-activates="translation-dropdown"><img src="{% static 'img/super/images/flag-icons/es.png' %}" alt="{{lang.name}}" /></a>
+                            {% endif %}
+                        </li>                        
+                
+                      
+                    </ul>
+                    <!-- translation-button -->
+                    <ul id="translation-dropdown" class="dropdown-content">                                                
+                        {% for lang_code, lang_name in languages %}
+                            {% language lang_code %}
+                                {% if lang_code != LANGUAGE_CODE %}
+                                    <li>
+                                        <a onclick="change_language('{{ lang_code }}')" href="#!"><img src="{% static 'img/super/images/flag-icons/en.png' %}" alt="{{ lang_name }}" />  <span class="language-select">{{ lang_name }}</span></a>
+                                    </li>
+                                {% endif %}
+                            {% endlanguage %}
+                        {% endfor %}                                          
+                    </ul>
+                  
+                </div>
+            </nav>
+          </div>
+          <!-- end header nav-->
+    </header>
+    <!-- END HEADER -->
+
+
+  <form action="{% url 'set_language' %}" method="post" id="change_language">
+      {% csrf_token %}
+      <input name="next" type="hidden" value="{{ redirect_to }}" />
+      <input type="hidden" name="language" id="language">   
+  </form>

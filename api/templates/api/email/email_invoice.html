@@ -1,0 +1,35 @@
+{% extends 'email/email/main_mail.html' %}
+{% load i18n %}
+{% load static %}
+
+{%block main %}
+<table style="width: 450px; word-wrap: break-word;">
+    <tr>
+        <td style="text-align: center;">
+            <h2>¡Bienvenido a <a href="{{ current_site.domain }}">{{ current_site.domain }}</a>!</h2>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3>Has hecho una compra recientemente con nosotros.</h3>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Adjuntomamos los detalle de la misma. 
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align: center;">
+            Agradecemos tu confianza. 
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Si no ve correctamente el botón, vaya a esta dirección
+            <a  href="{{ activate_url }}">{{ activate_url }}</a>
+            </p>
+        </td>
+    </tr>
+</table>
+{% endblock %}

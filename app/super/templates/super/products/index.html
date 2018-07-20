@@ -1,0 +1,74 @@
+{% extends 'super/base.html' %}
+{% load i18n %}
+{% load static %}
+{% get_media_prefix as MEDIA_URL %}
+{% get_static_prefix as STATIC_URL %}
+
+{% block main %}
+    <section id="content">
+        <!--start container-->
+        <div class="container">
+            <div id="work-collections">
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <ul id="projects-collection" class="collection">
+                            <li class="collection-item avatar">
+                                <i class="mdi-file-folder circle light-blue darken-2"></i>
+                                <span class="collection-header">{% trans 'Services' %}</span>
+                                <p>{% ifequal products.count  0 %}
+                                        
+                                        {% trans 'Nothing for show' %} 
+                                    {% endifequal %}
+                                </p>
+                                <a href="{% url 'product-new' %}" class="btn-floating  waves-effect waves-light darken-2 right"><i class="mdi-content-add activator"></i></a>
+                            </li>
+
+                            <div id="striped-table">
+                                <div class="row">                                    
+                                    <div class="col s12 m12 l12">
+                                        <table class="striped">
+                                            <thead>
+                                              <tr>
+                                                <th data-field="id">{% trans 'Name' %} </th>
+                                                <th data-field="name">{% trans 'Price ' %}</th>
+                                                <th data-field="price">{% trans 'Code bar' %}</th>
+                                                <th data-field="price">{% trans 'Options' %}</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>                                                
+                                                {% for item in servies %}
+                                                    <tr>
+                                                        <td>{{item.name}}</td>
+                                                        <td>{{item.price|floatformat:2}}</td>
+                                                        
+                                                        <td>{{item.code_bar}}</td>
+                                                        <td  style=" padding-right: 20px !important; padding-left: 0px !important; margin-top: 5px;">
+                                                            
+                                                            <a href="{% url 'product-edit' item.id %}" class="btn-floating  waves-effect waves-light blue  left"><i class="mdi-editor-mode-edit activator"></i></a>
+
+                                                            <a href="{% url 'product-delete' item.id %}" class="btn-floating  waves-effect waves-light red  left"><i class="mdi-action-delete activator"></i></a>
+
+                                                        </td>                                        
+                                                    </tr>
+                                                {% endfor %}                             
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                    {% include 'super/partials/pagination.html' %}
+                </div>
+            </div>
+        <!--end container-->
+    </section>
+    <!-- END CONTENT -->
+
+
+{% endblock %}
+
+{% block main_extra_script %}
+    <script type="text/javascript" src="{% static 'js/super/js/plugins/jquery-1.11.2.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/super/js/materialize.min.js' %}"></script>   
+{% endblock %}

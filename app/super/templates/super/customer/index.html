@@ -1,0 +1,101 @@
+{% extends 'super/base.html' %}
+
+{% load i18n %}
+
+{% load static %}
+{% get_media_prefix as MEDIA_URL %}
+{% get_static_prefix as STATIC_URL %}
+{% load qr_code %}
+
+{% block main %}
+    <!-- START CONTENT -->
+    <section id="content">
+        <!--start container-->
+        <div class="container">
+            <div id="work-collections">
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <ul id="projects-collection" class="collection">
+                            <li class="collection-item avatar">
+                                <i class="mdi-file-folder circle light-blue darken-2"></i>
+                                <span class="collection-header">{% trans 'Customers' %}</span>
+                                <p>{% ifequal customers.count  0 %}                                        
+                                        {% trans 'Nothing for show' %} 
+                                    {% endifequal %}
+                                </p>
+                                <a href="{% url 'customer-new' %}" class="btn-floating  waves-effect waves-light darken-2 right"><i class="mdi-content-add activator"></i></a>
+                            </li>
+
+                            <div id="striped-table">
+                                <div class="row">
+                                    
+                                    <div class="col s12 m12 l12">
+                                        <table class="striped">
+                                            <thead>
+                                              <tr>
+                                                <th data-field="id">{% trans 'First name' %} </th>
+                                                <th data-field="name">{% trans 'Last name' %}</th>
+                                                <th data-field="price">{% trans 'Address' %}</th>
+                                                <th data-field="price">{% trans 'Phone' %}</th>
+                                                <th data-field="price">{% trans 'Email' %}</th>
+                                                <th data-field="price">{% trans 'Nit' %}</th>
+                                                <th data-field="price">{% trans 'DPI' %}</th>
+                                                <th data-field="price">{% trans 'Code bar' %}</th>
+                                                <th data-field="price">{% trans 'Options' %}</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                                
+                                                {% for item in customers %}
+                                                    <tr>
+                                                        <td>{{item.first_name}}</td>
+                                                        <td>{{item.last_name}}</td>
+                                                        <td>{{item.address}}</td>
+                                                        <td>{{item.phone}}</td>
+                                                        <td>{{item.email}}</td>
+                                                        <td>{{item.nit}}</td>
+                                                        <td>{{item.dpi}}</td>
+                                                        <td>
+                                                            {% if item.dpi %}
+                                                                {{item.dpi}}
+
+                                                                {% qr_from_text item.dpi size=8 version=12 %}
+
+
+
+                                                            {% else %}
+                                                                No
+                                                            {% endif %}
+
+                                                        </td>
+                                                        <td>
+                                                            
+                                                            <a href="{% url 'customer-edit' item.id %}" class="btn-floating  waves-effect waves-light blue  left"><i class="mdi-editor-mode-edit activator"></i></a>
+
+                                                            <a href="{% url 'customer-delete' item.id %}" class="btn-floating  waves-effect waves-light red  left"><i class="mdi-action-delete activator"></i></a>
+
+                                                        </td>                                        
+                                                    </tr>
+                                                {% endfor %}                             
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                    {% include 'super/partials/pagination.html' %}
+                </div>
+            </div>
+        </div>
+        <!--end container-->
+    </section>
+    <!-- END CONTENT -->
+   
+
+{% endblock %}
+
+{% block main_extra_script %}
+    <script type="text/javascript" src="{% static 'js/super/js/plugins/jquery-1.11.2.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/super/js/materialize.min.js' %}"></script>   
+{% endblock %}

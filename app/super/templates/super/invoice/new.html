@@ -1,0 +1,83 @@
+
+{% extends 'super/base.html' %}
+{% load i18n %}
+{% load static %}
+{% get_media_prefix as MEDIA_URL %}
+{% get_static_prefix as STATIC_URL %}
+{% load addclass %}
+
+
+
+{% block main %}
+
+    <!-- START CONTENT -->
+    <section id="content">
+       <!--start container-->
+        <div class="container">
+			<div class="row">
+                <div class="col s12 m12 l12">
+                    <div class="card-panel">  
+                        <h4 class="header2">{% trans 'New invoice' %}</h4> 
+                        <div class="row">
+                            <form class="col s12 right-alert" method="post" action="" multi-form >
+                                {% csrf_token %}
+                                {{form.errors}}
+                                {{ form.management_form }}
+                                <input type="hidden" name="user" id="user" value="{{user.id}}">
+         
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        {{ form.customer }}
+                                        {{ form.customer.label_tag }}
+                                    </div>
+                             
+                                    <div class="input-field col s6">
+                                        {{ form.description|addclass:'materialize-textarea' }}
+                                        {{ form.description.label_tag }}
+                                    </div>                                    
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        {{ form.payment_method }}
+                                        {{ form.payment_method.label_tag }}
+                                    </div>
+                                
+                                    <div class="input-field col s6">
+                                        {{ form.pay }}
+                                        {{ form.pay.label_tag }}
+                                    </div>                                    
+                                </div>
+
+
+                                <div class="invoice-table">
+                                    <div class="row">
+                                        <div class="col s12 m12 l12">
+                                        
+                                        </div>    
+                                    </div>
+                                </div>        
+                                <div class="row">            
+                                    <div class="row">
+                                        <div class="input-field col s12"> 
+                                            <button class="btn cyan waves-effect waves-light right" type="submit" name="action">          
+                                                {% trans 'Save' %}
+                                                <i class="mdi-content-send right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>                                     
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <!--end container-->
+    </section>
+ 
+
+{% endblock %}
+{% block main_extra_script %}
+    <script type="text/javascript" src="{% static 'js/super/js/plugins/jquery-1.11.2.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/super/js/materialize.min.js' %}"></script>   
+{% endblock %}

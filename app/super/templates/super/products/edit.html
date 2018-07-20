@@ -1,0 +1,101 @@
+{% extends 'super/base.html' %}
+{% load i18n %}
+{% load static %}
+{% get_media_prefix as MEDIA_URL %}
+{% get_static_prefix as STATIC_URL %}
+
+{% block main %}
+    <!-- START CONTENT -->
+    <section id="content">
+       <!--start container-->
+        <div class="container">
+			<div class="row">
+                <div class="col s12 m12 l12">
+                  <div class="input-field col s12">
+                      <a href="{% url 'product-list' %}" class="btn pink waves-effect waves-light right" type="submit" name="action">{% trans 'Back' %}
+                      <i class="mdi-content-reply left"></i>
+                      </a>
+                  </div>
+                    <div class="card-panel">
+                        <h4 class="header2">{% trans 'edit services' %}</h4>
+
+                        <div class="row">
+                            <form class="col s12" method="post" action="" >
+                                {% csrf_token %}
+                                {{ form.management_form }}                                                   
+                                <div id="basic-form" class="section">
+                                    <div class="row">
+                                        <div class="col s12 m12 l6">
+                                            <div class="card-panel">
+                                              {{form.errors}}
+                                                <h4 class="header2">{% trans 'Information' %}</h4>
+                                                <div class="row">
+
+                                                      <div class="row">
+                                                          <div class="input-field col s6">
+                                                            {{ form.name }}
+                                                            {{ form.name.label_tag }}
+                                                          </div>
+                                                        
+                                                
+                                                        </div>
+
+                                                        <div class="row">
+                                                          <div class="input-field col s6">
+                                                            {{ form.price }}
+                                                            {{ form.price.label_tag }}
+                                                          </div> 
+                                                                                                
+                                                        </div>                                            
+                                                        <div class="row">    
+                                                          <div class="input-field col s4">
+                                                             {{ form.discount }}
+                                                             {{ form.discount.label_tag }}
+                                                          </div>
+                                                    </div>
+                                                </div>
+                                            </div>                                    
+                                        </div>
+                                        <div id="input_id"></div>
+                                        <div class="col s12 m12 l6">
+                                            <!-- Form with placeholder -->
+                                            <div class="card-panel">
+                                                <h4 class="header2">{% trans 'Text' %}</h4>
+                                                <div class="row">
+                                                    <div class="row">
+                                                      <div class="input-field col s12">
+                                                         {{ form.description }}
+                                                         {{ form.description.label_tag }}
+                                                      </div>
+                                                    </div> 
+                                                
+                                                                 
+                                                </div>
+                                            </div>                                   
+                                        </div>
+                                    </div>
+                                    <div class="row">            
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                                <button class="btn cyan waves-effect waves-light right" type="submit" name="action">{% trans 'Save' %}
+                                                <i class="mdi-content-send right"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                </div>
+                                                   
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <!--end container-->
+    </section>
+  
+{% endblock %}
+{% block main_extra_script %}
+    <script type="text/javascript" src="{% static 'js/super/js/plugins/jquery-1.11.2.min.js' %}"></script>    
+    <script type="text/javascript" src="{% static 'js/super/js/materialize.min.js' %}"></script>   
+{% endblock %}

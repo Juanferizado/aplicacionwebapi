@@ -1,0 +1,25 @@
+{
+  "name": "gridiego",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/diegodiazgt/MMI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/diegodiazgt/MMI/issues"
+  },
+  "homepage": "https://gitlab.com/diegodiazgt/MMI#README",
+  "dependencies": {
+    "vue": "^2.5.13"
+  },
+  "devDependencies": {
+    "vue-resource": "^1.3.4"
+  }
+}

@@ -1,0 +1,807 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-04 00:02-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: api/views.py:170
+msgid "Pay success."
+msgstr "Pago realizado existosamente."
+
+#: app/accounts/forms.py:51 app/accounts/forms.py:52 app/accounts/models.py:55
+#: app/super/templates/super/customer/index.html:35
+msgid "First name"
+msgstr "Nombre"
+
+#: app/accounts/forms.py:55 app/accounts/forms.py:56 app/accounts/models.py:56
+#: app/common/models.py:64 app/super/templates/super/customer/index.html:36
+msgid "Last name"
+msgstr "Apellido"
+
+#: app/accounts/models.py:41 app/accounts/models.py:74 app/common/models.py:170
+msgid "User"
+msgstr "User"
+
+#: app/accounts/models.py:42
+msgid "Admin"
+msgstr "Admin"
+
+#: app/accounts/models.py:51
+msgid "Tipo"
+msgstr "Tipo"
+
+#: app/accounts/models.py:54 app/common/models.py:72
+#: app/super/templates/super/customer/index.html:39
+msgid "Email"
+msgstr "Email"
+
+#: app/accounts/models.py:57
+msgid "Is active"
+msgstr "Activo"
+
+#: app/accounts/models.py:59
+msgid "Created"
+msgstr "Creado"
+
+#: app/accounts/models.py:61
+msgid "Modified"
+msgstr "Modificado"
+
+#: app/accounts/models.py:75 app/common/models.py:171
+msgid "Users"
+msgstr "Usuarios"
+
+#: app/accounts/templates/account/account_inactive.html:5
+#: app/accounts/templates/account/account_inactive.html:8
+msgid "Account Inactive"
+msgstr "Cuenta activa"
+
+#: app/accounts/templates/account/account_inactive.html:10
+msgid "This account is inactive."
+msgstr "Esta cuenta esta inactiva"
+
+#: app/accounts/templates/account/email.html:5
+msgid "Account"
+msgstr "Cuenta"
+
+#: app/accounts/templates/account/email.html:8
+msgid "E-mail Addresses"
+msgstr "Dirección de correo eléctronico"
+
+#: app/accounts/templates/account/email.html:10
+msgid "The following e-mail addresses are associated with your account:"
+msgstr ""
+"Las siguientes direcciones de correo eléctronico son asociadas con tu cuenta."
+
+#: app/accounts/templates/account/email.html:24
+msgid "Verified"
+msgstr "Verificado"
+
+#: app/accounts/templates/account/email.html:26
+msgid "Unverified"
+msgstr "Sin verificar"
+
+#: app/accounts/templates/account/email.html:28
+msgid "Primary"
+msgstr "Principal"
+
+#: app/accounts/templates/account/email.html:34
+msgid "Make Primary"
+msgstr "Hacer principal"
+
+#: app/accounts/templates/account/email.html:35
+msgid "Re-send Verification"
+msgstr "Re enviar verificación"
+
+#: app/accounts/templates/account/email.html:36
+msgid "Remove"
+msgstr "Remover"
+
+#: app/accounts/templates/account/email.html:43
+msgid "Warning:"
+msgstr "Alerta"
+
+#: app/accounts/templates/account/email.html:43
+msgid ""
+"You currently do not have any e-mail address set up. You should really add "
+"an e-mail address so you can receive notifications, reset your password, etc."
+msgstr ""
+
+#: app/accounts/templates/account/email.html:48
+msgid "Add E-mail Address"
+msgstr ""
+
+#: app/accounts/templates/account/email.html:53
+msgid "Add E-mail"
+msgstr ""
+
+#: app/accounts/templates/account/email.html:62
+msgid "Do you really want to remove the selected e-mail address?"
+msgstr ""
+
+#: app/accounts/templates/account/email/password_reset_key_message.html:6
+#, python-format
+msgid ""
+"Hello from %(site_name)s!\n"
+"    </p>\n"
+"        <br>\n"
+"    <p>\n"
+"        You're receiving this e-mail because you or someone else has "
+"requested a password for your user account at %(site_domain)s.\n"
+"    </p>\n"
+"    <p>\n"
+"        It can be safely ignored if you did not request a password reset. "
+"Click the link below to reset your password."
+msgstr ""
+
+#: app/accounts/templates/account/email/password_reset_key_message.html:19
+#, python-format
+msgid "In case you forgot, your username is %(username)s."
+msgstr ""
+
+#: app/accounts/templates/account/email/password_reset_key_subject.txt:3
+msgid "Password Reset E-mail"
+msgstr ""
+
+#: app/accounts/templates/account/email_confirm.html:43
+msgid "Confirm"
+msgstr ""
+
+#: app/accounts/templates/account/email_confirm.html:56
+#, python-format
+msgid ""
+"This e-mail confirmation link expired or is invalid. Please <a href="
+"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+msgstr ""
+
+#: app/accounts/templates/account/email_confirmed.html:6
+#: app/accounts/templates/account/email_confirmed.html:11
+msgid "Confirm E-mail Address"
+msgstr ""
+
+#: app/accounts/templates/account/email_confirmed.html:15
+#, python-format
+msgid ""
+"You have confirmed that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-"
+"mail address for user %(user_display)s."
+msgstr ""
+
+#: app/accounts/templates/account/login.html:104
+msgid "Sing In"
+msgstr ""
+
+#: app/accounts/templates/account/login.html:109
+msgid "Register Now!"
+msgstr "Registra ahora"
+
+#: app/accounts/templates/account/login.html:112
+msgid "Forgot Password?"
+msgstr "Olvide la contraseña"
+
+#: app/accounts/templates/account/logout.html:80
+msgid "Are you sure you want to sign out?"
+msgstr "Estas seguro que quieres salir."
+
+#: app/accounts/templates/account/logout.html:86
+msgid "Sign Out"
+msgstr "Salir"
+
+#: app/accounts/templates/account/messages/cannot_delete_primary_email.txt:2
+#, python-format
+msgid "You cannot remove your primary e-mail address (%(email)s)."
+msgstr "No puedes remover tu correo eléctronico principal (%(email)s)."
+
+#: app/accounts/templates/account/messages/email_confirmation_sent.txt:2
+#, python-format
+msgid "Confirmation e-mail sent to %(email)s."
+msgstr ""
+
+#: app/accounts/templates/account/messages/email_confirmed.txt:2
+#, python-format
+msgid "You have confirmed %(email)s."
+msgstr ""
+
+#: app/accounts/templates/account/messages/email_deleted.txt:2
+#, python-format
+msgid "Removed e-mail address %(email)s."
+msgstr ""
+
+#: app/accounts/templates/account/messages/logged_in.txt:4
+#, python-format
+msgid "Successfully signed in as %(name)s."
+msgstr ""
+
+#: app/accounts/templates/account/messages/logged_out.txt:2
+msgid "You have signed out."
+msgstr ""
+
+#: app/accounts/templates/account/messages/password_changed.txt:2
+msgid "Password successfully changed."
+msgstr ""
+
+#: app/accounts/templates/account/messages/password_set.txt:2
+msgid "Password successfully set."
+msgstr ""
+
+#: app/accounts/templates/account/messages/primary_email_set.txt:2
+msgid "Primary e-mail address set."
+msgstr ""
+
+#: app/accounts/templates/account/messages/unverified_primary_email.txt:2
+msgid "Your primary e-mail address must be verified."
+msgstr ""
+
+#: app/accounts/templates/account/password_change.html:16
+#: app/accounts/templates/account/password_change.html:36
+#: app/accounts/templates/account/password_reset_from_key.html:21
+#: app/accounts/templates/account/password_reset_from_key_done.html:19
+#: app/accounts/templates/account/password_reset_from_key_done.html:33
+msgid "Change Password"
+msgstr "Cambiar contraseña"
+
+#: app/accounts/templates/account/password_change.html:39
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: app/accounts/templates/account/password_reset.html:69
+msgid "Password reset"
+msgstr ""
+
+#: app/accounts/templates/account/password_reset.html:75
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll send you "
+"an e-mail allowing you to reset it."
+msgstr ""
+
+#: app/accounts/templates/account/password_reset.html:98
+#: app/accounts/templates/account/password_reset_done.html:23
+msgid "Password Reset"
+msgstr ""
+
+#: app/accounts/templates/account/password_reset.html:101
+#: app/accounts/templates/account/signup.html:135
+msgid "Already you registered?"
+msgstr ""
+
+#: app/accounts/templates/account/password_reset.html:104
+msgid "Please contact us if you have any trouble resetting your password."
+msgstr ""
+
+#: app/accounts/templates/account/password_reset.html:107
+#: app/accounts/templates/account/signup.html:137
+msgid "sign in"
+msgstr ""
+
+#: app/accounts/templates/account/password_reset_done.html:37
+msgid ""
+"We have sent you an e-mail. Please contact us <a href=\"mailto:"
+"info@taxibusnerja.com\" target=\"_top\">info@taxibusnerja.com</a> if you do "
+"not receive it within a few minutes."
+msgstr ""
+
+#: app/accounts/templates/account/password_reset_from_key.html:21
+msgid "Bad Token"
+msgstr "Token malo"
+
+#: app/accounts/templates/account/password_reset_from_key.html:40
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
+"a>."
+msgstr ""
+
+#: app/accounts/templates/account/password_reset_from_key.html:51
+#: app/super/templates/super/brand/edit.html:30
+#: app/super/templates/super/brand/new.html:80
+#: app/super/templates/super/customer/edit.html:73
+#: app/super/templates/super/customer/new.html:74
+#: app/super/templates/super/invoice/edit.html:47
+#: app/super/templates/super/invoice/new.html:50
+#: app/super/templates/super/products/edit.html:80
+#: app/super/templates/super/products/new.html:105
+msgid "Save"
+msgstr "Guardar"
+
+#: app/accounts/templates/account/password_reset_from_key.html:56
+#: app/accounts/templates/account/password_reset_from_key_done.html:34
+msgid "Your password is now changed."
+msgstr "Su contraseña ahora esta cambiada"
+
+#: app/accounts/templates/account/password_reset_from_key_done.html:36
+msgid "Login"
+msgstr "Ingreso"
+
+#: app/accounts/templates/account/password_set.html:5
+#: app/accounts/templates/account/password_set.html:8
+#: app/accounts/templates/account/password_set.html:13
+msgid "Set Password"
+msgstr "Resetear contraseña"
+
+#: app/accounts/templates/account/signup.html:89
+#: app/accounts/templates/account/signup.html:132
+msgid "Sign Up"
+msgstr "Ingresar"
+
+#: app/accounts/templates/account/signup.html:90
+msgid "Join to our community now !"
+msgstr "Unete a nuestra comunidad"
+
+#: app/accounts/templates/account/signup_closed.html:5
+#: app/accounts/templates/account/signup_closed.html:8
+msgid "Sign Up Closed"
+msgstr "Sesión cerrada"
+
+#: app/accounts/templates/account/signup_closed.html:10
+msgid "We are sorry, but the sign up is currently closed."
+msgstr "Lo sentimos, pero la seción esta actualmente cerrada."
+
+#: app/accounts/templates/account/snippets/already_logged_in.html:5
+msgid "Note"
+msgstr "Nota"
+
+#: app/accounts/templates/account/snippets/already_logged_in.html:5
+#, python-format
+msgid "you are already logged in as %(user_display)s."
+msgstr ""
+
+#: app/accounts/templates/account/verification_sent.html:24
+#: app/accounts/templates/account/verified_email_required.html:5
+#: app/accounts/templates/account/verified_email_required.html:8
+msgid "Verify Your E-mail Address"
+msgstr ""
+
+#: app/accounts/templates/account/verification_sent.html:27
+msgid ""
+"We have sent an e-mail to you for verification. Follow the link provided to "
+"finalize the signup process. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr ""
+
+#: app/accounts/templates/account/verified_email_required.html:12
+msgid ""
+"This part of the site requires us to verify that\n"
+"you are who you claim to be. For this purpose, we require that you\n"
+"verify ownership of your e-mail address. "
+msgstr ""
+
+#: app/accounts/templates/account/verified_email_required.html:16
+msgid ""
+"We have sent an e-mail to you for\n"
+"verification. Please click on the link inside this e-mail. Please\n"
+"contact us if you do not receive it within a few minutes."
+msgstr ""
+
+#: app/accounts/templates/account/verified_email_required.html:20
+#, python-format
+msgid ""
+"<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your e-"
+"mail address</a>."
+msgstr ""
+
+#: app/common/models.py:22
+msgid "In transit"
+msgstr "En transito"
+
+#: app/common/models.py:23
+msgid "Delivered"
+msgstr "Entregado"
+
+#: app/common/models.py:24
+msgid "Canceled"
+msgstr "Cancelado"
+
+#: app/common/models.py:31
+msgid "Credit"
+msgstr "Crédito"
+
+#: app/common/models.py:32 app/common/models.py:44
+#: app/super/templates/super/invoice/index.html:67
+msgid "Cash"
+msgstr "Efectivo"
+
+#: app/common/models.py:43 app/super/templates/super/invoice/index.html:65
+msgid "Check"
+msgstr "Cheque"
+
+#: app/common/models.py:45
+msgid "Deposit"
+msgstr "Deposito"
+
+#: app/common/models.py:46 app/super/templates/super/invoice/index.html:71
+msgid "Transfer"
+msgstr "Transferir"
+
+#: app/common/models.py:47
+msgid "Credit Card"
+msgstr "Tarjeta de crédito"
+
+#: app/common/models.py:48
+msgid "Debit Card"
+msgstr "Tarjeta de débito"
+
+#: app/common/models.py:55
+msgid "Online"
+msgstr "En línea "
+
+#: app/common/models.py:56
+msgid "Store"
+msgstr "Tienda"
+
+#: app/common/models.py:66
+msgid "Firts name"
+msgstr "Nombre"
+
+#: app/common/models.py:68 app/super/templates/super/customer/index.html:37
+msgid "Address"
+msgstr "Direcciones"
+
+#: app/common/models.py:70 app/super/templates/super/customer/index.html:38
+msgid "Phone"
+msgstr "Teléfono"
+
+#: app/common/models.py:74
+msgid "NIT"
+msgstr "NIT"
+
+#: app/common/models.py:76 app/super/templates/super/customer/index.html:41
+msgid "DPI"
+msgstr "DPI"
+
+#: app/common/models.py:78 app/super/templates/super/customer/index.html:42
+#: app/super/templates/super/products/index.html:34
+msgid "Code bar"
+msgstr "Códgo de barra"
+
+#: app/common/models.py:82 app/common/models.py:164
+#: app/super/templates/super/invoice/index.html:40
+msgid "Customer"
+msgstr "Cliente"
+
+#: app/common/models.py:83 app/super/templates/super/customer/index.html:20
+#: app/super/templates/super/partials/left_sidebar_nav.html:43
+msgid "Customers"
+msgstr "Clientes"
+
+#: app/common/models.py:127 app/super/templates/super/brand/index.html:34
+#: app/super/templates/super/products/index.html:32
+msgid "Name"
+msgstr "Nombre"
+
+#: app/common/models.py:129 app/common/models.py:159 app/common/models.py:279
+#: app/super/templates/super/invoice/index.html:39
+msgid "Status"
+msgstr "Estado"
+
+#: app/common/models.py:131 app/common/models.py:285
+#: app/super/templates/super/invoice/form.html:31
+msgid "Price"
+msgstr "Precio"
+
+#: app/common/models.py:133 app/common/models.py:181 app/common/models.py:302
+#: app/super/templates/super/invoice/index.html:43
+msgid "Description"
+msgstr "Descripción"
+
+#: app/common/models.py:135 app/super/templates/super/invoice/form.html:32
+msgid "Discount"
+msgstr "Descuento"
+
+#: app/common/models.py:139
+msgid "Service"
+msgstr "Servicio"
+
+#: app/common/models.py:140 app/common/models.py:269
+#: app/super/templates/super/partials/left_sidebar_nav.html:54
+#: app/super/templates/super/partials/left_sidebar_nav.html:57
+#: app/super/templates/super/products/index.html:17
+msgid "Services"
+msgstr "Servicios"
+
+#: app/common/models.py:158
+msgid "correlative"
+msgstr "Correlativo"
+
+#: app/common/models.py:160
+msgid "Pay"
+msgstr "Pago"
+
+#: app/common/models.py:165
+msgid "customers"
+msgstr "Clientes"
+
+#: app/common/models.py:179 app/super/templates/super/invoice/index.html:42
+msgid "Payment method"
+msgstr "Método de pago"
+
+#: app/common/models.py:183
+msgid "Document number"
+msgstr "Número de documento"
+
+#: app/common/models.py:184
+msgid "Pay date"
+msgstr "Fecha de pago"
+
+#: app/common/models.py:188 app/common/models.py:275
+msgid "Invoice"
+msgstr "Factura"
+
+#: app/common/models.py:189 app/super/templates/super/invoice/index.html:24
+#: app/super/templates/super/partials/left_sidebar_nav.html:38
+#: app/super/templates/super/partials/left_sidebar_nav.html:41
+msgid "Invoices"
+msgstr "Facturas"
+
+#: app/common/models.py:291
+msgid "Sub total"
+msgstr "Subtotal"
+
+#: app/common/models.py:297
+msgid "discount"
+msgstr "Descuento"
+
+#: app/common/models.py:307
+msgid "Detail invoice"
+msgstr "Detalle de factura"
+
+#: app/common/models.py:308
+msgid "Details invoice"
+msgstr "Detalles de factura"
+
+#: app/super/customer/views.py:78 app/super/invoice/views.py:73
+#: app/super/products/views.py:77
+msgid "Creacion exito"
+msgstr "Creación Exitosa"
+
+#: app/super/customer/views.py:88 app/super/customer/views.py:131
+#: app/super/invoice/views.py:83 app/super/invoice/views.py:127
+#: app/super/products/views.py:87 app/super/products/views.py:133
+msgid "Please correct the error below."
+msgstr "Por facor corrija los errores de abajo"
+
+#: app/super/customer/views.py:121 app/super/invoice/views.py:117
+#: app/super/products/views.py:123
+msgid "Updated success."
+msgstr "Actualización exitosa"
+
+#: app/super/customer/views.py:164 app/super/invoice/views.py:160
+#: app/super/products/views.py:166
+msgid "Delete success"
+msgstr "Borrado exitoso"
+
+#: app/super/customer/views.py:179
+msgid "Sin resultados"
+msgstr "Sin resultados"
+
+#: app/super/customer/views.py:183
+msgid "Cliente encontrado."
+msgstr "Cliente encontrado"
+
+#: app/super/templates/super/base.html:27
+#: app/super/templates/super/partials/header.html:23
+msgid "Gestion servicios"
+msgstr "Gestion servicios"
+
+#: app/super/templates/super/brand/delete.html:16
+msgid "delete brand"
+msgstr "Borar marca"
+
+#: app/super/templates/super/brand/edit.html:16
+msgid "edit brand"
+msgstr "Editar marca"
+
+#: app/super/templates/super/brand/index.html:21
+msgid "Brand"
+msgstr "Marca"
+
+#: app/super/templates/super/brand/index.html:23
+#: app/super/templates/super/customer/customer_status.html:23
+#: app/super/templates/super/customer/index.html:22
+#: app/super/templates/super/invoice/index.html:26
+#: app/super/templates/super/products/index.html:20
+msgid "Nothing for show"
+msgstr "Nada para mostrar"
+
+#: app/super/templates/super/brand/index.html:35
+#: app/super/templates/super/customer/customer_status.html:35
+#: app/super/templates/super/customer/index.html:43
+#: app/super/templates/super/invoice/index.html:45
+#: app/super/templates/super/products/index.html:35
+msgid "Options"
+msgstr "Opciones"
+
+#: app/super/templates/super/brand/new.html:17
+msgid "new brand"
+msgstr "Nueva marca"
+
+#: app/super/templates/super/customer/customer_status.html:20
+msgid "Meses pendientes de pago"
+msgstr "Mese pendientes"
+
+#: app/super/templates/super/customer/customer_status.html:34
+msgid "Date"
+msgstr "Fecha"
+
+#: app/super/templates/super/customer/delete.html:17
+msgid "Delete customer"
+msgstr "Borrar cliente"
+
+#: app/super/templates/super/customer/edit.html:17
+#: app/super/templates/super/customer/new.html:17
+#: app/super/templates/super/products/edit.html:15
+msgid "Back"
+msgstr "Regresar"
+
+#: app/super/templates/super/customer/edit.html:22
+msgid "edit customer"
+msgstr "Editar usuario"
+
+#: app/super/templates/super/customer/index.html:40
+msgid "Nit"
+msgstr "NIT"
+
+#: app/super/templates/super/customer/new.html:22
+msgid "New customer"
+msgstr "Nuevo cliente"
+
+#: app/super/templates/super/invoice/delete.html:17
+msgid "Delete invoice"
+msgstr "Borrar factura"
+
+#: app/super/templates/super/invoice/edit.html:17
+msgid "Edit invoice"
+msgstr "Editar factura"
+
+#: app/super/templates/super/invoice/form.html:29
+msgid "Products"
+msgstr "Producto"
+
+#: app/super/templates/super/invoice/form.html:30
+msgid "Quantity"
+msgstr "Cantidad"
+
+#: app/super/templates/super/invoice/form.html:33
+msgid "Shipping"
+msgstr "Envío"
+
+#: app/super/templates/super/invoice/form.html:34
+msgid "Subtotal"
+msgstr "Subtotal"
+
+#: app/super/templates/super/invoice/index.html:38
+msgid "Correlative"
+msgstr "Correlativo"
+
+#: app/super/templates/super/invoice/index.html:41
+msgid "Type movent"
+msgstr "Tipo de movimiento"
+
+#: app/super/templates/super/invoice/index.html:44
+msgid "Total"
+msgstr "Total"
+
+#: app/super/templates/super/invoice/index.html:57
+msgid "Contado"
+msgstr "Contado"
+
+#: app/super/templates/super/invoice/index.html:59
+msgid "Credito"
+msgstr "Crédito"
+
+#: app/super/templates/super/invoice/index.html:69
+msgid "Desposit"
+msgstr "Desposito"
+
+#: app/super/templates/super/invoice/index.html:73
+msgid "Credit card"
+msgstr "Tarjeta de crédito"
+
+#: app/super/templates/super/invoice/index.html:75
+msgid "Devit card"
+msgstr "Tarjeta de devito"
+
+#: app/super/templates/super/invoice/new.html:20
+msgid "New nvoice"
+msgstr "Nueva factura"
+
+#: app/super/templates/super/partials/delete.html:6
+#, python-format
+msgid ""
+"Deleting the %(object_name)s '%(escaped_object)s' would result in deleting "
+"related objects, but your account doesn't have permission to delete the "
+"following types of objects:"
+msgstr ""
+
+#: app/super/templates/super/partials/delete.html:13
+#, python-format
+msgid ""
+"Deleting the %(object_name)s '%(escaped_object)s' would require deleting the "
+"following protected related objects:"
+msgstr ""
+
+#: app/super/templates/super/partials/delete.html:20
+#, python-format
+msgid ""
+"Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"? "
+"All of the following related items will be deleted:"
+msgstr ""
+"Esta seguro que quieres borrar %(object_name)s \"%(escaped_object)s\"? Los "
+"siguientes elementos relacionados serán borrados."
+
+#: app/super/templates/super/partials/delete.html:23
+msgid "Summary"
+msgstr "Resumen"
+
+#: app/super/templates/super/partials/delete.html:31
+msgid "Objects"
+msgstr "Objetos"
+
+#: app/super/templates/super/partials/delete.html:40
+msgid " Si, estoy seguro "
+msgstr "Si, estoy seguro"
+
+#: app/super/templates/super/partials/delete.html:41
+msgid "No, regresar"
+msgstr "No, regresar"
+
+#: app/super/templates/super/partials/header.html:29
+msgid "Search"
+msgstr "Buscar"
+
+#: app/super/templates/super/partials/left_sidebar_nav.html:32
+msgid "Dashboard"
+msgstr "Tablero"
+
+#: app/super/templates/super/products/delete.html:17
+msgid "delete product"
+msgstr "Borrar producto"
+
+#: app/super/templates/super/products/edit.html:20
+msgid "edit services"
+msgstr "Editar servicio"
+
+#: app/super/templates/super/products/edit.html:31
+#: app/super/templates/super/products/form.html:11
+#: app/super/templates/super/products/new.html:30
+msgid "Information"
+msgstr "Información"
+
+#: app/super/templates/super/products/edit.html:63
+#: app/super/templates/super/products/form.html:58
+#: app/super/templates/super/products/new.html:68
+msgid "Text"
+msgstr "Texot"
+
+#: app/super/templates/super/products/form.html:89
+msgid "Drag an drop file"
+msgstr "Arrastrar y soltar"
+
+#: app/super/templates/super/products/index.html:33
+msgid "Price "
+msgstr "Precio"
+
+#: app/super/templates/super/products/new.html:18
+msgid "new Services"
+msgstr "Nuevo servicio"
+
+#: config/settings/base.py:319
+msgid "Spanish"
+msgstr "Español"
+
+#: config/settings/base.py:320
+msgid "English"
+msgstr "Ingles"
