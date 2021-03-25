@@ -70,7 +70,7 @@ python-xlib==0.20
 python3-openid==3.1.0
 pytz==2018.4
 pyxdg==0.25
-PyYAML==3.12
+PyYAML==5.4
 reportlab==3.4.0
 requests==2.18.4
 requests-oauthlib==0.8.0
