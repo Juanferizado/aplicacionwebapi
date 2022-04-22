@@ -60,7 +60,7 @@ pycrypto==2.6.1
 pycups==1.9.73
 pygobject==3.26.1
 PyJWT==1.6.1
-PyPDF2==1.26.0
+PyPDF2==1.27.5
 Pyphen==0.9.4
 python-apt==1.6.0
 python-dateutil==2.7.2
